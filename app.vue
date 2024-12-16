@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import NathanHeader from './component/nathan-header.vue';
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+  <div class="app">
+    <NathanHeader />
+    <NuxtPage />
   </div>
 </template>
