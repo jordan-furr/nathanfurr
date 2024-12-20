@@ -4,8 +4,9 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.15;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     scroll-behavior: auto;
 }
 
@@ -532,6 +533,10 @@ h6 {
     margin-top: 7rem;
 }
 
+.mt11 {
+    margin-top: 8rem;
+}
+
 .ma2 {
     margin: .5rem;
 }
@@ -748,31 +753,42 @@ h6 {
 }
 
 .home {
-    padding: 2rem;
+    padding: 0 20px 40px 20px;
 }
 
+.page {
+    padding: 3rem;
+}
 
+h2 {
+    font-weight: normal;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.bg-gray {
+    background-color: var(--gray);
+}
+
+h1 {
+    font-size: 36px;
+}
 
 /* HEADER */
 
 .header-cont {
-    position: absolute;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: var(--red);
-    padding: 36px 60px;
-    transition: transform 0.3s ease;
+    padding: 28px 20px;
+    transition: all 0.3s ease-out;
     z-index: 1000;
-}
-
-.header-cont.hidden {
-    transform: translateY(-100%);
 }
 
 .header-nav-list {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .menu-item {
@@ -788,7 +804,7 @@ h6 {
 }
 
 .logo {
-    font-size: 36px;
+    font-size: 24px;
     text-decoration: none;
     color: white;
 }
@@ -811,7 +827,7 @@ h6 {
 .burger span {
     display: block;
     height: 3px;
-    background: #333;
+    background: white;
     margin: 5px 0;
     transition: all 0.3s ease;
 }
@@ -821,7 +837,7 @@ h6 {
     top: 100%;
     left: 0;
     width: 100%;
-    background: white;
+    background: var(--gray);
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -832,7 +848,7 @@ h6 {
 /* Animations */
 .accordion-enter-active,
 .accordion-leave-active {
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: max-height 0.3s ease;
 }
 
 .accordion-enter {
@@ -847,52 +863,79 @@ h6 {
 
 .accordion-enter-active {
     max-height: 300px;
-    /* Adjust based on your menu height */
     opacity: 1;
 }
 
-.slide-left-enter-active,
-.slide-left-leave-active {
-    transition: transform 0.3s ease;
+
+
+.landing-img {
+    background-image: url('/nathanfurrwobi.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
 
-.slide-left-enter {
-    transform: translateX(-100%);
+.landing-bio {
+    min-height: 330px;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: var(--red);
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
-.slide-left-leave-to {
-    transform: translateX(-100%);
-}
-
-.slide-right-enter-active,
-.slide-right-leave-active {
-    transition: transform 0.3s ease;
-}
-
-.slide-right-enter {
-    transform: translateX(100%);
-}
-
-.slide-right-leave-to {
-    transform: translateX(100%);
+.landing-bio h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
 }
 
 
-
-
+.name {
+    background-color: var(--red);
+    padding: .75rem;
+    color: white;
+    font-weight: 500;
+    display: inline;
+}
 
 .email-button {
     box-sizing: border-box;
-    padding: 12px 28px;
+    padding: .75rem 1.25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
     border: 1px solid black;
     display: inline;
     color: black;
     text-decoration: none;
-    font-weight: bold;
 }
 
+.research-areas {
+     color: var(--red);
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 28px;
+     font-size: 22px;
+     font-weight: 900;
 
+}
 
+.page h1 {
+    margin-bottom: 2rem;
+}
+
+.books,.articles {
+    margin-top: 2rem;
+}
+
+.book-title {
+    margin-bottom: .5rem;
+}
+
+.book-year {
+    font-weight: bold;
+}
 
 
 
@@ -906,5 +949,58 @@ h6 {
 
     .burger-menu {
         display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .landing-img {
+        height: 540px;
+    }
+
+    .home {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .header-cont {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 939px) {
+    .landing-img {
+        height: 640px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    .header-cont {
+        padding: 42px 3rem;
+    }
+    .web-50 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1239px) {
+    .landing-img {
+        height: 700px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1379px) {
+    .landing-img {
+        height: 750px;
     }
 }

@@ -1,9 +1,9 @@
 <template>
-    <div class="ph3 header-cont w-100 borderbox" :hidden="isHidden">
+    <div class="ph3 header-cont w-100 borderbox">
         <div class="flex-row space-between block border-box align-center">
             <!--Logo-->
             <div class="">
-                <a href="/" class="logo" exact-active-class="active">Nathan Furr</a>
+                <a href="/" class="logo" exact-active-class="active">Nathan R. Furr</a>
             </div>
             <!--Desktop Nav-->
             <div class="flex-grow-1 flex-shrink-0 block desktop-nav">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <!--Mobile Nav-->
-            <transition name="slide-right">
+            <transition name="accordion">
                 <div v-if="menuOpen" class="mobile-nav">
                     <a href="/about" class="menu-item" exact-active-class="active">About</a>
                     <a href="/booking" class="menu-item" exact-active-class="active">Booking</a>
@@ -51,27 +51,13 @@
 export default {
     data() {
         return {
-            menuOpen: false,
-            isHidden: false,
-            lastScrollY: 0
+            menuOpen: false
         };
     },
     methods: {
         toggleMenu() {
             this.menuOpen = !this.menuOpen;
-        },
-        handleScroll() {
-            const currentScrollY = window.scrollY;
-            this.isHidden = currentScrollY > this.lastScrollY;
-            this.lastScrollY = currentScrollY;
         }
-    },
-    mounted() {
-        this.lastScrollY = window.scrollY;
-        window.addEventListener("scroll", this.handleScroll);
-    },
-    beforeDestroy() {
-        window.removeEventListener("scroll", this.handleScroll);
     }
 };
 </script>
