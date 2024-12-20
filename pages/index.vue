@@ -42,6 +42,38 @@
                 <li>Entrepreneurship</li>
                 <li>Technology Change and Innovation</li>
                 <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
+                <li>Technology Strategy</li>
+                <li>Entrepreneurship</li>
+                <li>Technology Change and Innovation</li>
+                <li>Ecosystems, Platforms, Architectures, and Systems</li>
             </ul>
         </div>
     </div>
