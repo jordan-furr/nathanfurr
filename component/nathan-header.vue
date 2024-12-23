@@ -23,41 +23,35 @@
                     </div>
                     <!--Socials-->
                     <div class="flex-grow-0 flex-shrink-1">
-                        <a href="/" class="menu-item" exact-active-class="active">in</a>
+                        <a href="https://fr.linkedin.com/in/nathan-furr-044852" target="_" class="menu-item" exact-active-class="active">in</a>
                     </div>
                 </div>
             </div>
-            <!--Burger-->
-            <div class="flex-grow-0 flex-shrink-1 burger-menu">
-                <div class="burger" @click="toggleMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <!--Mobile Nav-->
+            <div class="flex-grow-0 flex-shrink-1">
+                <div class="mobile-menu">
+                    <menu-icon :isOpen="isMenuVisible" @toggle-menu="toggleMenu" />
+                    <mobile-menu :isVisible="isMenuVisible" @toggle-menu="toggleMenu" />
                 </div>
             </div>
-            <!--Mobile Nav-->
-            <transition name="accordion">
-                <div v-if="menuOpen" class="mobile-nav">
-                    <a href="/about" class="menu-item" exact-active-class="active">About</a>
-                    <a href="/booking" class="menu-item" exact-active-class="active">Booking</a>
-                    <a href="/publications" class="menu-item" exact-active-class="active">Publications</a>
-                </div>
-            </transition>
         </div>
     </div>
 </template>
 
 <script>
+import mobileMenu from './mobile-menu.vue';
+import menuIcon from './menu-icon.vue';
 export default {
+  components: { mobileMenu, menuIcon },
     data() {
         return {
-            menuOpen: false
-        };
+            isMenuVisible: false
+        }
     },
     methods: {
         toggleMenu() {
-            this.menuOpen = !this.menuOpen;
+            this.isMenuVisible = !this.isMenuVisible;
         }
     }
-};
+}
 </script>
