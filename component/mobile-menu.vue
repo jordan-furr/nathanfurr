@@ -19,8 +19,9 @@
                     </nuxt-link>
                 </li>
             </ul>
-            <div class="socials">
-                <a href="https://fr.linkedin.com/in/nathan-furr-044852" target="_" class="menu-item" exact-active-class="active">in</a>
+            <div class="socials flex-row align-center">
+                <a href="https://fr.linkedin.com/in/nathan-furr-044852"><img src=" /img/linkedin.png" class="social"
+                        alt=""></a>
             </div>
         </nav>
     </div>
