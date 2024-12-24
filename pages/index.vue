@@ -16,7 +16,7 @@
                     <a class="nathan-button" href="/booking">HIRE ME FOR A KEYNOTE</a>
                 </div>
             </div>
-            <h2 class="subtitle">Research Areas</h2>
+            <h2 class="subtitle">RESEARCH AREAS</h2>
             <ul class="research-areas">
                 <li>Technology Strategy</li>
                 <li>Entrepreneurship</li>

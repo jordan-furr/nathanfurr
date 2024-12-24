@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <div class="flex-col webrow">
-            <div class="web-33">
+            <div class="web-33 margin-a align-center">
                 <img class="about-img" src="/img/nathanfurr.webp" alt="">
             </div>
             <div class="web-66">

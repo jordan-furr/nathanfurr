@@ -10,7 +10,14 @@
                     </div>
                     <div class="web-50">
                         <h1>Booking</h1>
-                        <p>For Workshops / Keynotes / Event Booking, please email nathan.furr@insead.edu</p>
+                        <p>Keynotes / Workshops / Events</p>
+                        <br>
+                        <p>Please email nathan.furr@insead.edu</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>

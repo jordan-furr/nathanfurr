@@ -22,8 +22,9 @@
                         </div>
                     </div>
                     <!--Socials-->
-                    <div class="flex-grow-0 flex-shrink-1">
-                        <a href="https://fr.linkedin.com/in/nathan-furr-044852" target="_" class="menu-item" exact-active-class="active">in</a>
+                    <div class="flex-row socials align-center">
+                        <a href="https://fr.linkedin.com/in/nathan-furr-044852"><img
+                                src=" /img/linkedin.png" class="social" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -42,7 +43,7 @@
 import mobileMenu from './mobile-menu.vue';
 import menuIcon from './menu-icon.vue';
 export default {
-  components: { mobileMenu, menuIcon },
+    components: { mobileMenu, menuIcon },
     data() {
         return {
             isMenuVisible: false
